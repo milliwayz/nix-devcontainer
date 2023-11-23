@@ -1,7 +1,8 @@
 # nix-devcontainer
 
-![workflow status](https://github.com/xtruder/nix-devcontainer/actions//workflows/ci.yml/badge.svg)
+![workflow status](https://github.com/milliwayz/nix-devcontainer/actions/workflows/ci.yml/badge.svg)
 
+For trying out changes/additions we might need to contrib back upstream.
 
 ## Summary
 
@@ -104,7 +105,7 @@ use_nix
 ```
 
 For more informattion on how to develop with `nix-shell` you can take a
-look here: https://nixos.wiki/wiki/Development_environment_with_nix-shell
+look here: <https://nixos.wiki/wiki/Development_environment_with_nix-shell>
 
 ### Devcontainer integration
 
@@ -457,7 +458,7 @@ volumes:
 Some vscode extensions have issue that development environment is loaded too
 late. Currently vscode does not support an option to make extensions load after
 some other extension, but only supports extension dependencies, where one extension
-can wait for other extension to load, see also https://github.com/microsoft/vscode/issues/57481.
+can wait for other extension to load, see also <https://github.com/microsoft/vscode/issues/57481>.
 
 To workaround this issue we have implemented a hack, a vscode extension preloader
 that modifies extensions `package.json` on the fly to make extensions depend on
@@ -487,7 +488,7 @@ Example `devcontainer.json` settings:
 
 Running this devcontainer with Podman is currently not supported, due to vscode remote
 containers not supporting passing build flags to `podman` and `podman-compose`.
-See also https://github.com/microsoft/vscode-remote-release/issues/3545, there is also
+See also <https://github.com/microsoft/vscode-remote-release/issues/3545>, there is also
 a possible workaround, but i haven't tried it yet.
 
 ## Technical details
